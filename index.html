@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+
+        <section class="container">
+            <!-- ~~~NAVBAR~~~ -->
+
+            <nav class="nav-bar">
+                <div class="navbar-content">
+                    <img src="./assets/marvel.png" alt="marvel logo">
+                    <div class="navbar-menu">
+                        <ul>
+                            <li><a href="#">EXCLUSIVOS</a></li>
+                            <li><a href="#">NUEVOS</a></li>
+                            <li><a href="#">GIFT CARDS</a></li>
+                            <li><a href="#">FIND A STORE</a></li>
+                        </ul>
+                        <a class="toggle-menu">Menu</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- ~~~MAIN~~~ -->
+
+            <section class="main-content">
+                <p>Diseña tu</p>
+                <h1>Súper Héroe!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi dignissimos cumque laborum,
+                    nemo maxime consectetur obcaecati fuga consequuntur voluptatem similique, pariatur debitis omnis et!
+                    Perferendis architecto voluptatem tempora officia!
+                </p>
+            </section>
+
+            <!-- ~~~SIDE~~~ -->
+
+            <section class="side-content">
+                <div></div>
+                <p>Wolverine</p>
+                <img src="./assets/logan.png" alt="Hot Toys Wolverine">
+            </section>
+
+            <!-- ~~~~~~~~ -->
+
+            <section class="footer-content">
+                <div><img src="./assets/punisher.png" alt="punisher hot toys" id="punisher"></div>
+                <div><img src="./assets/daredevil.png" alt="daredevil hot toys" id="daredevil"></div>
+                <div><img src="./assets/starlord.png" alt="star lord hot toys" id="starlord"></div>
+            </section>
+
+        </section>
+
+
+        <!-- Loader -->
+        <section class="loader-section">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <!-- Modal -->
+        <section class="modal-section hidden" id="modal-punisher">
+            <div class="modal-content">
+                <img id="modal-close-punisher" class="modal-close" src="./assets/close.png" alt="close">
+                <div class="modal-slider">
+                    <input type="radio" name="slider-punisher" class="hidden" id="radio1" checked>
+                    <input type="radio" name="slider-punisher" class="hidden" id="radio2">
+                    <input type="radio" name="slider-punisher" class="hidden" id="radio3">
+                    <div class="cards">
+                        <label for="radio1" id="card1" class="card">
+                            <img src="./modal-imgs/punisher-modal.jpg" alt="">
+                        </label>
+                        <label for="radio2" id="card2" class="card">
+                            <img src="./modal-imgs/punisher-modal2.jpg" alt="">
+                        </label>
+                        <label for="radio3" id="card3" class="card">
+                            <img src="./modal-imgs/punisher-modal3.jpg" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="btn-modal">Lo quiero!</button>
+            </div>
+        </section>
+
+        <section class="modal-section hidden" id="modal-daredevil">
+            <div class="modal-content">
+                <img id="modal-close-daredevil" class="modal-close" src="./assets/close.png" alt="close">
+                <div class="modal-slider">
+                    <input type="radio" name="slider-daredevil" class="hidden" id="radio4" checked>
+                    <input type="radio" name="slider-daredevil" class="hidden" id="radio5">
+                    <input type="radio" name="slider-daredevil" class="hidden" id="radio6">
+                    <div class="cards">
+                        <label for="radio4" id="card4" class="card">
+                            <img src="./modal-imgs/daredevil-modal.jpg" alt="">
+                        </label>
+                        <label for="radio5" id="card5" class="card">
+                            <img src="./modal-imgs/daredevil-modal2.jpg" alt="">
+                        </label>
+                        <label for="radio6" id="card6" class="card">
+                            <img src="./modal-imgs/daredevil-modal3.jpg" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="btn-modal">Lo quiero!</button>
+            </div>
+        </section>
+
+        <section class="modal-section hidden" id="modal-starlord">
+            <div class="modal-content">
+                <img id="modal-close-starlord" class="modal-close" src="./assets/close.png" alt="close">
+                <div class="modal-slider">
+                    <input type="radio" name="slider-starlord" class="hidden" id="radio7" checked>
+                    <input type="radio" name="slider-starlord" class="hidden" id="radio8">
+                    <input type="radio" name="slider-starlord" class="hidden" id="radio9">
+                    <div class="cards">
+                        <label for="radio7" id="card7" class="card">
+                            <img src="./modal-imgs/starlord-modal.jpg" alt="">
+                        </label>
+                        <label for="radio8" id="card8" class="card">
+                            <img src="./modal-imgs/starlord-modal2.jpg" alt="">
+                        </label>
+                        <label for="radio9" id="card9" class="card">
+                            <img src="./modal-imgs/starlord-modal3.jpg" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="btn-modal">Lo quiero!</button>
+            </div>
+        </section>
+    </div>
+    <script src="./js/modal.js" async defer></script>
+</body>
+
+</html>
